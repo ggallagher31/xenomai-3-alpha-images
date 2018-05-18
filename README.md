@@ -30,14 +30,14 @@ Extract the kernel, boot files and kernel modules:
 We need to have an sdcard with two partitions, one will hold the rootfs and the other will hold the
 boot files (kernel, bootloader, devicetree etc).
 
-Preparing sdcard:
+Preparing Sdcard:
 ------------------------------
 Create two partitions, one will be FAT32, one will be EXT-4
 Partition sizes can vary; your FAT32 parition can be about 64MB and the rest can be EXT-4
 
 Creating the partitions is a excercise for the reader, but the easiest way to do this is to use a tool like gparted.
 
-Copy Rootfs and boot files:
+Copy Rootfs And Boot Files:
 --------------------------------
 Copy the boot files to the boot partition:
  rsync -aAxv ./rpi2_boot_modules/boot/* <path to sdcard>/boot/
@@ -55,7 +55,7 @@ Login for the system is :
 User : xeno
 passwd : xeno
 
-Setting up Tools:
+Setting Up Tools:
 --------------------------------
 We will also need a cross compiler.  I recommend using the Linaro arm-none-linux-eabihf- compiler. 
 environment. https://releases.linaro.org/components/toolchain/binaries/latest-5/arm-linux-gnueabihf/
